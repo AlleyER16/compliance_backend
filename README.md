@@ -10,4 +10,4 @@ Backend for compliance project
 4. Run the sql query in dbSchema.sql.
 5. If your frontend is on the same URL as your backend uncomment the codes in `v1/includes/admin_logged.php` and `v1/includes/employee_logged.php`.
 
-Note: Step 5 is because session cannot be persisted across different domains
+Note: `Step 5` is because session cannot be persisted across different domains and you would be able to test for one employee login at a time. You can change `1` in this line of code `$employee_id = $_SESSION["employee_logged"] ?? 1;` to which ever employee_id you want to test their login.
