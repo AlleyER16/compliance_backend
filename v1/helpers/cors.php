@@ -2,7 +2,6 @@
 
     header("Access-Control-Allow-Origin: *");
 
-    
     function get_base_url(){
         $type = "development";
         $port = $_SERVER["SERVER_PORT"];

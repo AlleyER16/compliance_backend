@@ -6,6 +6,7 @@
     //     http_response_code(401);die();
     // }
 
+    // $employee_id = $_SESSION["employee_logged"];
     $employee_id = $_SESSION["employee_logged"] ?? 1;
     
     require_once dirname(__FILE__, 3)."/ebl/Employees.php";
